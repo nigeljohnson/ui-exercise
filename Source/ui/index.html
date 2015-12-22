@@ -1,0 +1,368 @@
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSS only responsive menu</title>
+      <link rel="stylesheet" type="text/css" href="css/tabs.css" />
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600' rel='stylesheet' type='text/css'>
+  </head>
+
+  <div class="outer">
+    <input type="checkbox" id="slide-checkbox" class="slide-checkbox" role="button">
+    <label for="slide-checkbox" class="slide-toggle" onclick></label>
+    <div class="slide">
+      <ul class="nav">
+        <div class="lowerNav">
+        <li class="brand" ><a href="#"><div class="logo"></div></a></li>
+        <li class="search">
+          <form>
+            <input type="search" placeholder="Search">
+          </form>
+        </li>
+        <li>
+          
+            <ul class="cd-accordion-menu animated navCTA">
+                  <li class="has-children">
+                    <input type="checkbox" name ="group-3" id="group-3">
+                    <label for="group-3">Tom Jones
+                    <span>Per: Tom Jones</span></label>
+
+                    <ul>
+                      <li><a href="#0">My Account</a></li>
+                      <li><a href="#0">Preferences</a></li>
+                      <li><a href="#0">Notifications</a></li>
+                    </ul>
+                  </li>
+            </ul> <!-- cd-accordion-menu -->
+
+
+        </li>
+        <li><a href="#"><div class="Dashboard rss"></div>News</a></li>
+        <li class="dial"><a href="#"><div class="Dashboard"></div>Contact Us</a></li>
+        </div>
+
+
+      </ul>
+      <div class="content">
+  <div class="over-tab">
+    <section id="section1">
+      <input type="radio" name="sections" id="option1" checked>
+      <label for="option1" class="top"><div class="Dashboard dash"></div><p>Dashboard</p></label>
+      <article>
+
+        <div class="title">
+          <h2>Dashboard</h2>
+          <div class="gradOver"></div>
+          <span><div class="Dashboard close"></div>Exit to Cadences</span>
+        </div>
+
+        <div class="inner-tab">
+          <section id="section11">
+            <input type="radio" name="inner-sections" id="option11" checked>
+            <label for="option11"><p>Overview</p><div class="Dashboard"></div></label>
+            <article>
+              <p>Dummy Info only on overview/people tab</p>
+            </article>
+          </section>
+          <section id="section12">
+            <input type="radio" name="inner-sections" id="option12">
+            <label for="option12"><p>People</p><div class="Dashboard"></div></label>
+            <article>
+
+              <div class="row">
+                <div class="column">
+                  <div class="item">
+                    <div class="infoItem">
+                      <p>4</p>
+                      <span>active</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <div class="item">
+                    <div class="infoItem">
+                      <p>12</p>
+                      <span>Bounced</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <div class="item">
+                    <div class="infoItem">
+                      <p>3</p>
+                      <span>Open</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <div class="item">
+                    <div class="infoItem">
+                      <p>17</p>
+                      <span>Clicked</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <div class="item">
+                    <div class="infoItem">
+                      <p>12</p>
+                      <span>Replied</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <div class="item">
+                    <div class="infoItem">
+                      <p>4</p>
+                      <span>Called</span>
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="cd-accordion-menu animated filterMenu">
+                  <li class="has-children">
+                    <input type="checkbox" name ="group-4" id="group-4">
+                    <label for="group-4">Filter by type</label>
+
+                    <ul>
+                      <li><a href="#0">All</a></li>
+                      <li><a href="#0">1</a></li>
+                      <li><a href="#0">2</a></li>
+                      <li><a href="#0">3</a></li>
+                      <li><a href="#0">4</a></li>
+                      <li><a href="#0">5</a></li>
+                    </ul>
+                  </li>
+                </ul> <!-- cd-accordion-menu -->
+
+
+              </div>
+
+              <div class="row">
+                <div class="legend">
+                  <p> With Selected (0):</p>
+
+                  <div class="chooseFile">
+                    <input type="file" name="file" id="file" class="inputfile" />
+                    <label for="file"><p>Choose a file</p><div class="Dashboard plus"></div></label>
+                  </div>
+
+                  <div class="addItem">
+                    <button id="add-to-list"><p>Add a list item</p><div class="Dashboard minus"></div></button>
+                  </div>
+
+                  <div class="addItem">
+                    <button id="add-to-list"><p>Skip Next Action</p><div class="Dashboard next"></div></button>
+                  </div>
+
+                  <div class="addItem">
+                    <button id="add-to-list"><p>Send One-Off Email</p><div class="Dashboard email"></div></button>
+                  </div>
+
+                  <div class="addItem">
+                    <button id="add-to-list"><p>Export to CSV</p><div class="Dashboard export"></div></button>
+                  </div>
+
+                </div>
+
+                <ul id="list">
+                  <li class="show legend">
+
+                    <div class="column sixth">
+                    <input type="checkbox">
+                    </div>
+                    <div class="column sixth">
+                    <input type="radio">
+                    </div>
+                    <div class="column sixth"><div class="Dashboard updownarrow"></div>
+                    name
+                    </div>
+                    <div class="column sixth"><div class="Dashboard updownarrow"></div>
+                    company
+                    </div>
+                    <div class="column sixth"><div class="Dashboard updownarrow"></div>
+                    Stage
+                    </div>
+                    <div class="column sixth"><div class="Dashboard updownarrow"></div>
+                    Step
+                    </div>
+                    <div class="column sixth">
+                    E
+                    </div>
+                    <div class="column sixth">
+                    T
+                    </div>
+                    <div class="column sixth">
+                    R
+                    </div>
+                    <div class="column sixth">
+                    C
+                    </div>
+                    <div class="column sixth">
+                    Due On
+                    </div>
+                    <div class="column sixth"><div class="Dashboard updownarrow"></div>
+                    Last Contacted
+                    </div>
+
+                  </li>
+
+                  <li class="show">
+
+                    <div class="column sixth"><div class="Dashboard"></div>
+                    <input type="checkbox">
+                    </div>
+                    <div class="column sixth"><div class="Dashboard"></div>
+                    <input type="radio">
+                    </div>
+                    <div class="column sixth">
+                    John Smith
+                    </div>
+                    <div class="column sixth">
+                    Cool Company
+                    </div>
+                    <div class="column sixth">
+                    O
+                    </div>
+                    <div class="column sixth">
+                    1
+                    </div>
+                    <div class="column sixth">
+                    34
+                    </div>
+                    <div class="column sixth">
+                    35
+                    </div>
+                    <div class="column sixth">
+                    14
+                    </div>
+                    <div class="column sixth">
+                    15
+                    </div>
+                    <div class="column sixth">
+                    06/15/15
+                    </div>
+                    <div class="column sixth">
+                    6/14/15 (08:02 AM)
+                    </div>
+
+                  </li>
+
+                </ul>
+              </div>
+
+              <div class="behindText">
+                Dashboard
+              </div>
+
+            </article>
+          </section>
+          <section id="section13">
+            <input type="radio" name="inner-sections" id="option13">
+            <label for="option13"><p>Sent</p><div class="Dashboard"></div></label>
+            <article>
+              <p>Dummy Info only on overview/people tab</p>
+            </article>
+          </section>
+          <section id="section14">
+            <input type="radio" name="inner-sections" id="option14">
+            <label for="option14"><p>Steps</p><div class="Dashboard"></div></label>
+            <article>
+              <p>Dummy Info only on overview/people tab</p>
+            </article>
+          </section>
+          <section id="section15">
+            <input type="radio" name="inner-sections" id="option15">
+            <label for="option15"><p>Settings</p><div class="Dashboard dash"></div></label>
+            <article>
+              <p>Dummy Info only on overview/people tab</p>
+            </article>
+          </section>
+        </div>
+
+      </article>
+    </section>
+    <section id="section2">
+      <input type="radio" name="sections" id="option2">
+      <label for="option2"><div class="Dashboard cadences"></div><p>Cadences</p></label>
+      <article>
+        <h2>Cadences</h2>
+        <p>Dummy Info only on overview/people tab</p>
+      </article>
+    </section>
+    <section id="section3">
+      <input type="radio" name="sections" id="option3">
+      <label for="option3"><div class="Dashboard report"></div><p>Reports</p></label>
+      <article>
+        <h2>Reports</h2>
+        <p>Dummy Info only on overview/people tab</p>
+      </article>
+    </section>
+    <section id="section4">
+      <input type="radio" name="sections" id="option4">
+      <label for="option4"><div class="Dashboard email"></div><p>Emails</p></label>
+      <article>
+        <h2>Emails</h2>
+        <p>Dummy Info only on overview/people tab</p>
+      </article>
+    </section>
+    <section id="section5">
+      <input type="radio" name="sections" id="option5">
+      <label for="option5"><div class="Dashboard import"></div><p>Import</p></label>
+      <article>
+        <h2>Import</h2>
+        <p>Dummy Info only on overview/people tab</p>
+      </article>
+    </section>
+    <section id="section6">
+      <input type="radio" name="sections" id="option6">
+      <label for="option6"><div class="Dashboard people"></div><p>People</p></label>
+      <article>
+        <h2>People</h2>
+        <p>Dummy Info only on overview/people tab</p>
+      </article>
+    </section>
+    <section id="section7">
+      <input type="radio" name="sections" id="option7">
+      <label for="option7"><div class="Dashboard folder"></div><p>Templates</p></label>
+      <article>
+        <h2>Templates</h2>
+        <p>Dummy Info only on overview/people tab</p>
+      </article>
+    </section>
+
+    <ul class="cd-accordion-menu animated navMenu">
+      <li class="has-children">
+        <input type="checkbox" name ="group-2" id="group-2">
+        <label for="group-2">Resources</label>
+
+        <ul>
+          <li><a href="#0">Copywrite</a></li>
+          <li><a href="#0">Terms & Conditions</a></li>
+        </ul>
+      </li>
+      <div class="column container">
+        <div class="button half">
+          Livechat
+        </div>
+        <div class="button half">
+          search Help
+        </div>
+      </div>
+    </ul> <!-- cd-accordion-menu -->
+
+    <div class="restofNav">
+      
+    </div>
+
+  </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<script src="js/tabs.js"></script>
